@@ -31,6 +31,8 @@ require('telescope').setup {
             join_path("build", ".*"),
             join_path("git.", true),
             join_path(".git", ".*"),
+            join_path("lib", true),
+            join_path("lib", ".*"),
         }
     },
     extensions = {

@@ -28,7 +28,10 @@ return {
         end
 
         local required_servers = {
-            clangd = {},
+            clangd = {
+                -- manual_install = true,
+                -- cmd = { "D:\\app\\Clangd\\clangd_snapshot_20240721\\bin\\clangd.exe" }
+            },
             lua_ls = {
                 server_capabilities = {
                     sematicTokensProvider = vim.NIL,
@@ -44,7 +47,16 @@ return {
             -- fsautocomplete = {},
         }
 
-        require("mason-tool-installer").setup { ensure_installed = required_servers }
+        local servers_to_install = vim.tbl_filter(function(k)
+            local t = required_servers[k]
+            if type(t) == "table" then
+                return not t.manual_install
+            else
+                return t
+            end
+        end, vim.tbl_keys(required_servers))
+        -- require("mason-tool-installer").setup { ensure_installed = required_servers }
+        require("mason-tool-installer").setup { ensure_installed = servers_to_install }
 
         for name, config in pairs(required_servers) do
             if config == true then
