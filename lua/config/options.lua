@@ -1,3 +1,5 @@
+local is_win = vim.fn.has("win32") == 1
+
 vim.o.guicursor = "n-v-i:block"
 
 vim.wo.number = true
@@ -38,3 +40,4 @@ vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 
 vim.o.undofile = true
+vim.o.undodir = os.getenv("HOME") .. "/.nvim-undodir"
