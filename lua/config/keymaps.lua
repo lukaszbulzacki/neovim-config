@@ -23,8 +23,8 @@ vim.keymap.set('n', '<leader>ss', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
     { desc = 'Replace globaly interactive' })
 
 vim.keymap.set('n', 'B', function() vim.api.nvim_command('normal! ge') end, { desc = 'Backward cursor move at word end' })
-vim.keymap.set('n', '<leader>a', function() vim.api.nvim_command('normal! _') end, { desc = 'Goto begin of line' })
-vim.keymap.set('n', '<leader>z', function() vim.api.nvim_command('normal! $') end, { desc = 'Goto end of line' })
+--vim.keymap.set('n', '<leader>a', function() vim.api.nvim_command('normal! _') end, { desc = 'Goto begin of line' })
+--vim.keymap.set('n', '<leader>z', function() vim.api.nvim_command('normal! $') end, { desc = 'Goto end of line' })
 
 -- vim.keymap.set('n', '<leader>tn', '<cmd>tabnew<cr>', { desc = 'Open empty tab' })
 
@@ -32,3 +32,5 @@ vim.keymap.set('n', '<leader>bp', ':bprev<cr>', { desc = 'Goto [B]uffer [P]rev' 
 vim.keymap.set('n', '<leader>bn', ':bnext<cr>', { desc = 'Goto [B]uffer [N]ext' })
 
 vim.keymap.set('n', '<leader>ee', vim.cmd.Ex, { desc = 'Open file [E]xplor[e]r' })
+
+vim.keymap.set('n', '<leader>v', '^vg_', { desc = 'Mark line without leading/trailing whitespaces' })
