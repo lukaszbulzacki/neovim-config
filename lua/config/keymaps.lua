@@ -33,4 +33,4 @@ vim.keymap.set('n', '<leader>bn', ':bnext<cr>', { desc = 'Goto [B]uffer [N]ext' 
 
 vim.keymap.set('n', '<leader>ee', vim.cmd.Ex, { desc = 'Open file [E]xplor[e]r' })
 
-vim.keymap.set('n', '<leader>v', '^vg_', { desc = 'Mark line without leading/trailing whitespaces' })
+vim.keymap.set('n', '<M-v>', '^vg_', { desc = 'Mark line without leading/trailing whitespaces' })
