@@ -24,6 +24,10 @@ cmp.setup {
             },
             { "i", "c" }
         ),
+        ["<C-Space>"] = cmp.mapping.complete(),
+        ["<C-e>"] = cmp.mapping.abort(),
+        ["<A-p>"] = cmp.mapping.scroll_docs(-4),
+        ["<A-n>"] = cmp.mapping.scroll_docs(4),
     },
 
     -- Enable luasnip to handle snippet expansion for nvim-cmp
