@@ -28,6 +28,7 @@ return {
         end
 
         local required_servers = {
+            zls = {},
             clangd = {
                 -- manual_install = true,
                 -- cmd = { "D:\\app\\Clangd\\clangd_snapshot_20240721\\bin\\clangd.exe" }
