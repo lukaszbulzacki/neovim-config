@@ -28,6 +28,7 @@ vim.keymap.set('n', 'B', function() vim.api.nvim_command('normal! ge') end, { de
 
 -- vim.keymap.set('n', '<leader>tn', '<cmd>tabnew<cr>', { desc = 'Open empty tab' })
 
+vim.keymap.set('n', '<leader>bb', ':ls<cr>', { desc = 'List open [B]uffers' })
 vim.keymap.set('n', '<leader>bp', ':bprev<cr>', { desc = 'Goto [B]uffer [P]rev' })
 vim.keymap.set('n', '<leader>bn', ':bnext<cr>', { desc = 'Goto [B]uffer [N]ext' })
 
