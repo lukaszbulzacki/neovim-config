@@ -32,6 +32,9 @@ return {
             clangd = {
                 -- manual_install = true,
                 -- cmd = { "D:\\app\\Clangd\\clangd_snapshot_20240721\\bin\\clangd.exe" }
+                -- on_attach = function()
+                --     vim.keymap.set("n", "<M-o>", "<cmd>ClangdSwitchSourceHeader<cr>")
+                -- end
             },
             lua_ls = {
                 server_capabilities = {
@@ -96,6 +99,11 @@ return {
                 vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, { buffer = 0 })
                 vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0, desc = "Hover Documentation" })
                 vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, { buffer = 0, desc = "Help Signature" })
+                vim.keymap.set("n", "<M-o>", "<cmd>ClangdSwitchSourceHeader<cr>",
+                    { buffer = 0, desc = "Toggle between Header/Source file in C++ project" })
+                vim.keymap.set("i", "<M-o>", "<cmd>ClangdSwitchSourceHeader<cr> <ESC><cr>",
+                    { buffer = 0, desc = "Toggle between Header/Source file in C++ project" })
+
 
                 local filetype = vim.bo[bufnr].filetype
                 if disable_semantic_tokens[filetype] then
