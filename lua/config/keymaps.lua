@@ -37,6 +37,13 @@ vim.keymap.set({ 'n', 'i' }, '<M-j>', ':bprev<cr>', { desc = 'Goto [B]uffer [P]r
 vim.keymap.set({ 'n', 'i' }, '<M-k>', ':bnext<cr>', { desc = 'Goto [B]uffer [N]ext' })
 vim.keymap.set('n', '<M-l>', '<Nop>', { desc = 'Block some uncessary input possiblity' })
 
-vim.keymap.set('n', '<leader>e', ':Ex<cr>', { desc = 'Open file [E]xplor[e]r' })
+vim.keymap.set('n', '<leader>ee', ':Ex<cr>', { desc = 'Open file [E]xplor[e]r' })
 
 vim.keymap.set('n', '<M-v>', '^vg_', { desc = 'Mark line without leading/trailing whitespaces' })
+
+-- vim.keymap.set('i', '<C-j>', function() vim.api.nvim_win_set_cursor(0, vim.api.nvm_win_get_cursor(0) - 1) end)
+
+vim.keymap.set({ 'n', 'i', 'v' }, '<Up>', '<Nop>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Down>', '<Nop>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Left>', '<Nop>')
+vim.keymap.set({ 'n', 'i', 'v' }, '<Right>', '<Nop>')

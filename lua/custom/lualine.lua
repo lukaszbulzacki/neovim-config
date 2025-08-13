@@ -22,8 +22,6 @@ require("lualine").setup {
             },
         },
         lualine_b = {
-        },
-        lualine_c = {
             {
                 "buffers",
                 mode = 2,
@@ -35,7 +33,13 @@ require("lualine").setup {
                 }
             }
         },
+        lualine_c = {},
         lualine_x = {
+            {
+                require("noice").api.statusline.mode.get,
+                cond = require("noice").api.statusline.mode.has,
+                color = { fg = "#ff9e64" },
+            }
         },
         lualine_y = {},
         lualine_z = {},
