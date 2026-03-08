@@ -6,7 +6,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt.wrap = false
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 vim.opt.scrolloff = 12
 vim.opt.signcolumn = "yes"

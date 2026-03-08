@@ -44,6 +44,8 @@ require("telescope").setup {
             join_path("obj", ".*"),
             join_path("cmake", true),
             join_path("cmake", ".*"),
+            join_path("target", true),
+            join_path("target", ".*"),
         }
     },
     extensions = {
