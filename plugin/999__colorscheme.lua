@@ -1,0 +1,10 @@
+-- vim.pack.add({'https://github.com/askfiy/visual_studio_code'})
+-- require('visual_studio_code').setup({ mode='light' })
+-- vim.cmd([[colorscheme visual_studio_code]])
+
+vim.cmd.colorscheme("minicyan")
+-- vim.cmd.colorscheme("minischeme")
+-- vim.cmd.colorscheme("minisummer")
+-- vim.cmd.colorscheme("miniwinter")
+-- vim.cmd.colorscheme("minispring")
+-- vim.cmd.colorscheme("miniautumn")

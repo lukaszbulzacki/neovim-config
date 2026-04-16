@@ -1,0 +1,16 @@
+-- vim.pack.add{'https://www.github.com/nvim-tree/nvim-tree.lua'}
+--
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 0
+--
+-- require("nvim-tree").setup({
+-- 	view = {
+-- 		width = 35,
+-- 	},
+-- 	filters = {
+-- 		dotfiles = false,
+-- 	},
+-- 	renderer = {
+-- 		group_empty = true,
+-- 	},
+-- })
