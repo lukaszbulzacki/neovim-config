@@ -1,0 +1,5 @@
+require('config.0__autocmd')
+require('config.1__globals')
+require('config.2__options')
+require('config.3__keymaps')
+require('config.4__package')
