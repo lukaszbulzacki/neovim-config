@@ -26,7 +26,9 @@ vim.opt.incsearch = true
 
 vim.opt.colorcolumn = "120"
 vim.opt.showmatch = true
-vim.opt.completeopt = "menuone,noinsert,noselect"
+vim.opt.complete:append("o")
+vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
+vim.opt.autocomplete = true
 vim.opt.pumheight = 10
 vim.opt.pumblend = 10
 vim.opt.winblend = 0
